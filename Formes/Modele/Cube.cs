@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Formes
 {
-    public class Cube : Forme
+    public class Cube : IForme
     {
-        private double cote;
+        private readonly double cote;
 
         public Cube(double cote)
         {

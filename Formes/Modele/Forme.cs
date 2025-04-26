@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace Formes
 {
-    public interface Forme
+    public interface IForme
     {
         double perimetre();
         double aire();

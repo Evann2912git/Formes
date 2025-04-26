@@ -1,26 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Formes
 {
-    public class Cercle : Forme
+    public class Carre : IForme
     {
-        private double rayon;
+        private readonly double cote;
 
-        public Cercle(double rayon)
+        public Carre(double cote)
         {
-            this.rayon = rayon;
+            this.cote = cote;
         }
 
         public double perimetre()
         {
-            return 2 * Math.PI * rayon;
+            return cote * 4;
         }
 
         public double aire()
         {
-            return Math.PI * Math.Pow(rayon, 2);
+            return cote * cote;
         }
 
         public double volume()

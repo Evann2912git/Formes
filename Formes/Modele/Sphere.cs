@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Formes
 {
-    public class Sphere : Forme
+    public class Sphere : IForme
     {
-        private double rayon;
+        private readonly double rayon;
 
         public Sphere(double rayon)
         {
